@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Montserrat:wght@100;200;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0 10%;
+}
+
+button {
+    height: 50px;
+    width: 258px;
+    background-color: #098FCF;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+input {
+    font-family: inherit;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header button {
+    width: 176px;
+    height: 46px;
+}
+
+
+.contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigate {
+    position: relative;
+    height: 60px;
+    background-color: #F9F9F9;
+    width: 100vw;
+    margin-left: -12%;
+}
+
+.navigattion_list {
+    position: relative;
+    display: flex;
+    gap: 4rem;
+    padding-left: 10%;
+    padding-right: 4rem;
+    list-style-type: none;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.navigattion_list a {
+    text-decoration: none;
+    color: black;
+}
+
+.select_card {
+    border: none;
+    font-size: 15px;
+    background-color: #F9F9F9;
+
+}
+
+.delivery {
+    margin-top: 90px;
+}
+
+.delivery_block {
+    margin-top: 48px;
+    height: 289px;
+    -webkit-box-shadow: -2px 1px 20px -3px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: -2px 1px 20px -3px rgba(34, 60, 80, 0.2);
+    box-shadow: -2px 1px 20px -3px rgba(34, 60, 80, 0.2);
+    padding-left: 98px;
+    padding-top: 49px;
+
+}
+
+.inputs {
+    display: flex;
+    gap: 1rem;
+}
+
+.inputs input[type=text],
+input[type=phone] {
+    font-family: inherit;
+    height: 46px;
+    width: 243px;
+    padding-left: 7px;
+    border: 1px solid #D5D5D5
+}
+
+.inputs input[type=submit] {
+    margin-top: 20px;
+    height: 46px;
+    width: 258px;
+    padding: 5px 20px 5px 20px;
+    color: white;
+    background-color: #098FCF;
+    border: none;
+}
+
+.inputs input[type=submit]:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.inputs label {
+    left: 10%;
+    bottom: 15px;
+    font-size: 12px;
+}
+
+.delivery_block a {
+    text-decoration: none;
+}
+
+.table_price table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.thead {
+    background-color: #043C77;
+    color: #F9F9F9;
+    height: 56px;
+    border: 0;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+td {
+    border: 1px solid #E7E7E7;
+    height: 40px;
+}
+
+.form_delivery {
+    position: relative;
+    margin-top: 70px;
+    display: flex;
+    background-color: #F9F9F9;
+    padding-left: 15%;
+    width: 100vw;
+    margin-left: -15%;
+    padding-bottom: 5%;
+}
+
+.form_delivery .form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.form input,
+select {
+    height: 40px;
+    border: none;
+
+}
+
+.delevery_price {
+    margin-left: 4rem;
+    margin-top: 5rem;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 50%;
+    height: 70%;
+}
+
+.delevery_price h3 {
+    font-size: 24px;
+}
+
+.delevery_price h4 {
+    font-size: 16px;
+}
+
+.delevery_price p {
+    font-size: 12px;
+}
+
+.about_work {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 31px;
+    grid-row-gap: 0px;
+}
+
+.about_block {
+    width: 353px;
+    height: 394px;
+    left: 385px;
+    top: 92px;
+    background: #043C77;
+    color: white;
+    padding: 30px;
+}
+
+.about_block h4 {
+    font-size: 21px;
+}
+
+.about_block p {
+    font-size: 16px;
+}
+
+.about_benefits {
+    background-color: #F9F9F9;
+    width: 92vw;
+    margin-top: 5%;
+    margin-left: -12%;
+    padding: 5%;
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+
+}
+
+.benefits_block {
+    display: flex;
+    background-color: #FFFFFF;
+    padding: 5%;
+}
+
+.benefits_block span {
+    font-weight: 700;
+    padding-left: 2rem;
+    font-size: 15px;
+}
+
+.benefits_block img {
+    padding-bottom: 4rem;
+}
+
+.benefits_block p {
+    padding-left: 2rem;
+}
+
+.about {
+    margin-top: 5%;
+}
+
+.certificates {
+    position: relative;
+    display: flex;
+    gap: 4rem;
+}
+
+.certificates div {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    width: 257px;
+    height: 357px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+
+
+.partners {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.reviews {
+    margin-top: 40px;
+    position: relative;
+    background-color: #F9F9F9;
+    width: 92vw;
+    padding: 5%;
+    margin-left: -12%;
+}
+
+.review_content {
+    display: flex;
+    gap: 4rem;
+}
+
+.review_block {
+    background-color: #fff;
+    width: 30vw;
+    padding: 3rem;
+}
+
+.review_block a {
+    position: relative;
+    top: 30%;
+    text-decoration: none;
+}
+
+.review_block h4 {
+    font-size: 16px;
+}
+
+.review_block span {
+    font-size: 12px;
+}
+
+.review_block p {
+    font-size: 15px;
+}
+
+.reviews button {
+    margin-left: 30%;
+    margin-top: 50px;
+}
+
+.questions {
+    position: relative;
+    background-color: #043C77;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-left: -13%;
+    column-gap: 15%;
+    padding: 10% 5% 15% 5%;
+    top: 5vh;
+}
+
+.questions p {
+    font-size: 12px;
+}
+
+.questions input {
+    font-family: inherit;
+    height: 46px;
+    width: 243px;
+    padding-left: 7px;
+    border: 1px solid #D5D5D5
+}
+
+.questions a {
+    color: #fff;
+
+}
+
+.footer {
+    position: relative;
+    top: 10vh;
+    display: flex;
+    gap: 10%;
+    white-space: nowrap;
+
+}
+
+.footer li {
+    list-style-type: none;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 1000px) {
+    .header {
+        display: block;
+    }
+
+    .select_card {
+        background-color: #fff;
+    }
+
+    .delivery {
+        margin-top: 120px;
+    }
+
+    .navigate {
+        background: none;
+    }
+
+    .navigattion_list {
+        position: relative;
+        display: block;
+    }
+
+    .delivery_block {
+        height: 400px;
+        margin-right: -5rem;
+    }
+
+    .inputs {
+        display: block;
+        margin-left: -10%;
+    }
+
+    .form_delivery {
+        display: block;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+
+
+    .about_work,
+    .benefits,
+    .certificates,
+    .partners,
+    .reviews,
+    .review_content {
+        display: block;
+    }
+}

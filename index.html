@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Chrome, Firefox OS and Opera -->     <meta name="theme-color" content="#4285f4">     <!-- Windows Phone -->     <meta name="msapplication-navbutton-color" content="#4285f4">     <!-- iOS Safari -->     <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
+    <title>Процессинг24</title>
+    <link rel="manifest" href="~/manifest.json">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="./assets/logo.png" alt="logo" width="220" height="45">
+        <div class="contact">
+            <img src="./assets/phone.svg" alt="phone" height="15" width="15">
+            <a href="tel:+74951278280">8 (495) 127-82-80</a>
+            <button>напишите нам</button>
+            <button>
+                <img src="./assets/user.svg" alt="user" width="13" height="13" >
+                 личный кабинет</button>
+        </div>
+    </header>
+    <nav class="navigate">
+        <ul class="navigattion_list">
+            <li><a href="#">Доставка топлива</a></li>
+            <li>
+                <select class="select_card">
+                    <option value="#">Топливные карты</option>
+                    <option value="#">Карта 1</option>
+                    <option value="#">Карта 2</option>
+                </select>
+            </li>
+            <li>
+                <select class="select_card">
+                    <option value="#">АЗС</option>
+                    <option value="#">ДТ</option>
+                    <option value="#">АИ-95</option>
+                </select>
+            <li><a href="#">Цены на топливо</a></li>
+            <li>
+                <select class="select_card">
+                    <option value="#">О компании</option>
+                    <option value="#">Преимущества</option>
+                    <option value="#">Отзывы</option>
+                    <option value="#">Сертификаты</option>
+                    <option value="#">Партнеры</option>
+                </select>
+            <li><a href="#">Кантакты</a></li>
+        </ul>
+    </nav>
+    <section class="delivery">
+        <h1>Доставка топлива</h1>
+        <div class="delivery_block">
+            <h2>Быстрый <a href="#">заказ топлива</a></h2>
+            <div class="inputs">
+                <div class="name_input">
+                    <label for="fio">Ваше имя</label><br />
+                    <input type="text" id="fio" placeholder="Иван">
+                </div>
+                <div class="phone_input">
+                    <label for="contact">Номер телефона</label><br />
+                    <input type="phone" id="contact" value="+7(___)___-__-__">
+                </div>
+                <input type="submit" value="Заказать топливо">
+            </div>
+            <br>
+            <input type="checkbox" name="agreement" id="agreement">
+            <label for="agreement">Я согласен на обработку данных</label>
+        </div>
+    </section>
+    <section class="table_price">
+        <h1>Стоимость топлива</h1>
+    <table>
+        <thead class="thead">
+            <th>Сорт топлива</th>
+            <th>Экологический класс</th>
+            <th>Производитель</th>
+            <th>Наличный расчет</th>
+            <th>Безналичный расчет</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="5">
+                    <img src="./assets/df.png" alt="df">
+                </td>
+                <td rowspan="3">ЕВРО-5</td>
+                <td>Газпромнефть</td>
+                <td>45.43 р.</td>
+                <td>44.43 р.</td>
+            </tr>
+            <tr>
+                <td>Лукойл</td>
+                <td>45.16 р.</td>
+                <td>43.98 р.</td>
+            </tr>
+            <tr>
+                <td>Роснефть</td>
+                <td>42.34 р.</td>
+                <td>41.64 р.</td>
+            </tr>
+            <tr>
+                <td rowspan="2">ЕВРО-4</td>
+                <td>Газпромнефть</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr >
+                <td>Лукойл</td>
+                <td>41.16 р.</td>
+                <td>40.67 р.</td>
+            </tr>
+            <tr>
+                <td rowspan="8">
+                    <img src="./assets/ai95.png" alt="g95" >
+                </td>
+                <td rowspan="3">ЕВРО-5</td>
+                <td>Газпромнефть</td>
+                <td>45.43 р.</td>
+                <td>44.43 р.</td>
+            </tr>
+            <tr>
+                <td>Роснефть</td>
+                <td>42.34 р.</td>
+                <td>41.64 р.</td>
+            </tr>
+            <tr>
+                <td>Лукойл</td>
+                <td>45.16 р.</td>
+                <td>43.98 р.</td>
+            </tr>
+            <tr>
+                <td rowspan="2">ЕВРО-4</td>
+                <td>Лукойл</td>
+                <td>41.16 р.</td>
+                <td>40.67 р.</td>
+            </tr>
+            <tr>
+                <td>Газпромнефть</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td rowspan="3">ЕВРО-3</td>
+                <td>Роснефть</td>
+                <td>42.34 р.</td>
+                <td>41.64 р.</td>
+            </tr>
+            <tr>
+                <td>Газпромнефть</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Лукойл</td>
+                <td>45.16 р.</td>
+                <td>43.98 р.</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    </section>
+    <section class="form_delivery">
+        
+        <form action="submit" class="form">
+            <h1>Топливо с доставкой</h1>
+            <label for="fuel">Вид топлива</label>
+            <select name="fuel">
+                <option  label="ДТ">
+                <option  label="АИ-95">
+            </select>
+            <label for="volume">Объем топлива</label>
+            <input type="text" id="volume" placeholder="0 литров">
+            <label for="place">Место доставки</label>
+            <input type="text" id="place">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name">
+            <label for="phone">Номер телефона</label>
+            <input id="phone" type="text" value="+7(___)___-__-__">
+        </form>
+        <div class="delevery_price">
+            <h2>Итого</h3>
+            <hr>
+            <h3>Стоимость топлива</h3><p>77 350.00 ₽</p>
+            <h3>Цена за литр</h3>
+            <p>Цена и стоимость указаны ориентировочно. 
+                Точные цену и стоимость собщит наш менеджер при подтверждении заявки.</p>
+            <p>45.50 ₽.</p>
+            <h3>Выгода</h3>
+            <p>При цене на АЗС 49.59 ₽ за литр, цены актуальны на 23.11.2020 г.</p>
+            <p>6953.00 ₽.</p>
+            <button>Заказать топливо</button>
+        </div>
+    </section>
+    <h1>Как мы работаем</h1>
+    <section class="about_work" id="about">
+        
+        <div class="about_block">
+            <img src="./assets/click.svg" alt="click">
+            <p>1-3 мин.</p>
+            <img src="./assets/arrow.svg" alt="arrow">
+            <h2>Оформление заявки</h2>
+            <p>Заполните заявку на сайте, укажите удобное для вас место приезда заправщика, сорт и количество топлива, которое хотите купить</p>
+        </div>
+        <div class="about_block">
+            <img src="./assets/call.svg" alt="call">
+            <p>1-3 мин.</p>
+            <img src="./assets/arrow.svg" alt="arrow">
+            <h2>Подтверждение заявки менеджером</h2>
+            <p>Дождитесь звонка нашего менеджера для уточнения условий заказа</p>
+            
+        </div>
+        <div class="about_block">
+            <img src="./assets/gas.svg" alt="call">
+            <p>30-90 мин.</p>
+            <h2>Заправка вашего автомобиля</h2>
+            <p>В назначенное время приедет заправщик и заправит автомобиль топливом.</p>
+            <p> Если у заказчика есть действующий договор на топливные карты, то при оплате можно провести транзакцию через терминал. Переносное устройство есть у каждого заправщика</p>
+        </div>
+    </section>
+    <div class="about_benefits">
+    <h1>Преимущества сервиса</h1>
+    <section class="benefits">
+        <div class="benefits_block">
+            <img src="./assets/control.svg" alt="control">
+            <div class="description_benefits">
+                <span>Качество топлива</span>
+                <p>Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
+            </div>
+        </div>
+        <div class="benefits_block">
+            <img src="./assets/place.svg" alt="place">
+            <div class="description_benefits">
+                <span>Ваш комфорт—наша забота</span>
+                <p>Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
+            </div>
+        </div>
+        <div class="benefits_block">
+            <img src="./assets/clock.svg" alt="clock">
+            <div class="description_benefits">
+                <span>Бережем ваше время и нервы</span>
+            <p>Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p>
+            </div>
+        </div>
+        <div class="benefits_block">
+            <img src="./assets/shield.svg" alt="shield">
+            <div class="description_benefits">
+                <span>Безопасность процесса</span>
+                <p>Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p></div>
+            </div>
+        <div class="benefits_block">
+            
+            <img src="./assets/coin.svg" alt="coin">
+            <div class="description_benefits">
+                <span>Цена</span>
+                <p>Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p></div>
+            </div>
+            <div class="benefits_block">
+            <img src="./assets/way.svg" alt="control">
+            <div class="description_benefits">
+            <span>Несколько ТС в одном месте?</span>
+            
+            <p>Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.</p></div>
+        </div>
+        </section>
+    </div>
+    <div class="about">
+        <h1>Сертификаты качества топлива</h1>
+        <section class="certificates">
+            
+            <div>
+                <img src="./assets/certificate1.png" alt="cert1" width="217">
+            </div>
+            <div>
+                <img src="./assets/certif2.png" alt="cert1" width="217">
+            </div>
+            <div>
+                <img src="./assets/certif3.png" alt="cert1" width="217">
+            </div>
+            <div>
+                <img src="./assets/certif4.png" alt="cert1" width="217">
+            </div>
+        </section>
+        <h1>Наши партнеры</h1>
+        <section class="partners">
+            <img src="./assets/lucoil.png" alt="lucoil" width="150">
+            <img src="./assets/gpn.png" alt="gpn" width="150">
+            <img src="./assets/rosneft.png" alt="rn" width="150">
+            <img src="./assets/tatneft.jpg" alt="tatneft" width="150">
+        </section>
+    </div>
+    <hr>
+
+    <section class="reviews">
+        <h1>Отзывы</h1>
+        <div class="review_content">
+            <div class="review_block">
+                <strong>Гусев Вячеслав</strong>
+                <span>Индивидуальный предприниматель</span>
+                <p>Velit, lectus sit urna tincidunt augue. Cursus vulputate pellentesque faucibus euismod. Diam pharetra, non, ut integer dui feugiat porttitor at. Non, dignissim enim viverra fringilla sit. Etiam justo a dignissim sociis vitae, nisi, justo, feugiat.</p>
+                <a href="#">подробнее</a>
+            </div>
+            <div class="review_block">
+                <strong>Зеленов Евгений</strong>
+                <span>Гененеральный директор трансопртной компании</span>
+                <p>Velit, lectus sit urna tincidunt augue. Cursus vulputate pellentesque faucibus euismod. Diam pharetra, non, ut integer dui feugiat porttitor at. Non, dignissim enim viverra fringilla sit. Etiam justo a dignissim sociis vitae, nisi, justo, feugiat.</p>
+                <a href="#">подробнее</a>
+            </div>
+        </div>
+        <button>Читать все отзывы</button>
+    </section>
+    <section class="questions">
+        <h1>Остались вопросы?</h1>
+        <p>Готовы ответить на любой Ваш вопрос. Оставьте свой номер телефона и мы свяжемся с вами в ближайшее время</p>
+        <form action="submit">
+            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="Номер телефона">
+            <button type="submit">Перрезвоните мне</button>
+            <p>нажимая на кнопку &laquoПерезвоните мне&raquo, вы соглашаетесь с <a href="https://frprf.ru/download/tipovoe-soglashenie-o-konfidentsialnosti.pdf" target="_blank" rel="noopener noreferrer">политикой конфиденциальности</a></p>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="logo" width="220" height="45">
+            <p>&#169 2019 ООО "Процессинг24</p>
+        </div>
+        <ul>
+            <li><a href="#">Карта АЗС</a></li>
+            <li><a href="#">АЗС по регионам</a></li>
+            <li><a href="#">АЗС по брендам</a></li>
+            <li><a href="#">Доставка топлива</a></li>
+        </ul>
+        <ul>
+            <li><a href="">Контакты</a></li>
+            <li><a href="#about">О компании</a></li>
+            <li><a href="#">Личный кабинет</a></li>
+        </ul>
+        <div class="contact">
+            <strong>Отдел продаж</strong>
+            <a href="tel:+74951278170">8(495)127-81-70</a>
+        </div>
+    </footer>
+</body>
+</html>
